@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/darkmode.css" id="theme">
+  <link rel="alternate stylesheet" href="styles/lightmode.css" id="theme">
+  <style>
+    .project-btn {
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      padding: 0px 0px;
+      text-align: center;
+      text-decoration: none;
+      float: left;
+      position: relative;
+      left: 48.1%;
+      bottom: -4px;
+      font-size: 30px;
+      cursor: pointer;
+      transition:transform 0.3s ease;
+    }
+    
+    .project-btn:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow-md);
+      border-color:var(--accent);
+    }
+  </style>
+  <!-- JS -->
+  <script src="scripts/theme.js"></script>
+  <script src="scripts/projects.js"></script>
+</head>
+<body>
+  <!-- =====================================================
+       HERO SECTION - Edit your name and info here
+       ===================================================== -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <div class="avatar-circle">
+        <!-- EDIT: Put your initials here (2 letters) -->
+        SD
+      </div>
+      
+      <h1>
+        <!-- EDIT: Put your full name here -->
+        Skyler Dietz
+      </h1>
+      
+      <p class="tagline">
+        <!-- EDIT: Write a short headline about yourself -->
+        Information Technology Student • Aspiring Cybersecurity Expert
+      </p>
+
+      <div class="skills-tags">
+        <!-- EDIT: Add 4-6 of your key skills or interests -->
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">IntelliJ</span>
+        <span class="skill-tag">Eclipse</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Linux</span>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Toggle lightmode and darkmode -->
+  <button class="mode-btn" onclick="toggleTheme()" id="switch">💡</button>
+  <script>setTheme()</script>
+
+  <!-- =====================================================
+       MAIN CONTENT AREA
+       ===================================================== -->
+  <div class="container">
+
+    <!-- ABOUT SECTION -->
+    <div class="card">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        <!-- EDIT: Write 2-3 sentences about yourself -->
+        I'm a passionate Information Technology student interested in learning and problem solving. I hope to work at a Cybersecurity firm one day!
+      </p>
+
+      <div class="about-grid">
+        <div class="about-item">
+          <div class="about-icon">🎓</div>
+          <div class="about-text">
+            <h4>Education</h4>
+            <p>
+              <!-- EDIT: Your degree and year -->
+              B.S. Information Technology<br>Expected Graduation: 2029
+            </p>
+          </div>
+        </div>
+
+        <div class="about-item">
+          <div class="about-icon">📍</div>
+          <div class="about-text">
+            <h4>Location</h4>
+            <p>
+              <!-- EDIT: Your city and state -->
+              Wantagh, NY
+            </p>
+          </div>
+        </div>
+
+        <div class="about-item">
+          <div class="about-icon">💼</div>
+          <div class="about-text">
+            <h4>Interests</h4>
+            <p>
+              <!-- EDIT: Your career interests -->
+              Cybersecurity, IT, Network Administrator
+            </p>
+          </div>
+        </div>
+
+        <div class="about-item">
+          <div class="about-icon">✉️</div>
+          <div class="about-text">
+            <h4>Contact</h4>
+            <p>
+              <!-- EDIT: Your email address -->
+              tdietz@nyit.edu
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="card">
+      <h2 class="section-title">School Projects & Coursework</h2>
+      <p class="section-subtitle">
+        <!-- EDIT: Brief intro to your projects -->
+        Here are some projects I've completed for school assignments. Each project helped me develop new skills and apply what I learned in class.
+      </p>
+
+      <!-- PG 1 -->
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1 -->
+        <div class="project-card" id="s0">
+          <h4>
+            <!-- EDIT: Project title -->
+            Professional LinkedIn
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Created a professional resume highlighting my education, skills, and experience. Set up a LinkedIn profile to connect with professionals in my field and showcase my academic achievements.
+          </p>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card" id="s1">
+          <h4>
+            <!-- EDIT: Project title -->
+            GitHub Portfolio Setup
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Initialized a GitHub repository to organize my coursework and coding projects. Learned version control basics and how to document my work for future employers to review.
+          </p>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card" id="s2">
+          <h4>
+            <!-- EDIT: Project title -->
+            Professional Resume Website
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Created a website centralizing all of my professional and school related work. Learned how to use HTML, CSS, JS, & GitHub Pages to create and maintain a website.
+          </p>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card" id="s3">
+          <h4>
+            <!-- EDIT: Project title -->
+            Placeholder 1
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card" id="s4">
+          <h4>
+            <!-- EDIT: Project title -->
+            Placeholder 2
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card" id="s5">
+          <h4>
+            <!-- EDIT: Project title -->
+            Placeholder 3
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+
+        <!-- PROJECT 7 -->
+        <div class="project-card" id="s6">
+          <h4>
+            <!-- EDIT: Project title -->
+            Placeholder 4
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+
+        <!-- PROJECT 8 -->
+        <div class="project-card" id="s7">
+          <h4>
+            <!-- EDIT: Project title -->
+            Placeholder 5
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+
+        <!-- PROJECT 9 -->
+        <div class="project-card" id="s8">
+          <h4>
+            <!-- EDIT: Project title -->
+            Placeholder 6
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+
+      </div>
+      <button class="project-btn" onclick="toggleCards()" id="project-btn">⬇️</button>
+    </div>
+    <script>getCards()</script>
+
+    <!-- PROJECTS SECTION -->
+    <div class="card">
+      <h2 class="section-title">Personal Projects</h2>
+      <p class="section-subtitle">
+        <!-- EDIT: Brief intro to your projects -->
+        Here are some projects I created in my free time. Each project was created from experience in school and the real world.
+      </p>
+
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <h4>
+            <!-- EDIT: Project title -->
+            <a href="https://github.com/skyler948/MAGE" class="link-btn secondary-small" target="_blank">MAGE (Maybe a Game Engine)</a>
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            A 2D Game Engine written in Java from scratch with no external libraries. Supports custom scenes, objects, spritesheets, fonts, and more.
+          </p>
+        </div>
+        
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <h4>
+            <!-- EDIT: Project title -->
+            <a href="https://github.com/skyler948/gd-cps-calc" class="link-btn secondary-small" target="_blank">Geometry Dash CPS Calculator</a>
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            A Clicks Per Second (CPS) Calculator for the PC/Mobile game Geometry Dash. Made in C++ & Python.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTACT & LINKS SECTION -->
+    <div class="card">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">
+        <!-- EDIT: Message to potential employers/connections -->
+        I'm always interested in new opportunities and collaborations. Feel free to reach out!
+      </p>
+
+      <div class="contact-grid">
+        <div>
+          <h3 style="font-size:18px;margin-bottom:16px;font-weight:600">Quick Info</h3>
+          <ul class="info-list">
+            <li><strong>Major:</strong> 
+              <!-- EDIT: Your major -->
+              Information Technology
+            </li>
+            <li><strong>Year:</strong> 
+              <!-- EDIT: Your year (Freshman, Sophomore, etc.) -->
+              Freshman
+            </li>
+            <li><strong>Email:</strong> 
+              <!-- EDIT: Your email -->
+              tdietz@nyit.edu
+            </li>
+            <li><strong>Location:</strong> 
+              <!-- EDIT: Your location -->
+              Wantagh, NY
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style="font-size:18px;margin-bottom:16px;font-weight:600">Links</h3>
+          
+          <!-- EDIT: Replace # with your actual LinkedIn URL -->
+          <a href="https://www.linkedin.com/in/skyler-dietz-36b368386/" class="link-btn" target="_blank">LinkedIn Profile</a>
+          
+          <!-- EDIT: Replace # with your actual GitHub URL -->
+          <a href="https://github.com/skyler948" class="link-btn secondary" target="_blank">GitHub Profile</a>
+          
+          <!-- RESUME LINK: -->
+          <a href="https://drive.google.com/file/d/1Th9QFiYUK6v___5QE6V-b00dBTp7c5sg/view?usp=sharing" class="link-btn secondary" target="_blank">Download Resume</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer>
+    <!-- EDIT: Your name and year -->
+    © 2025 Skyler Dietz • My Portfolio
+  </footer>
+
+</body>
+</html>
