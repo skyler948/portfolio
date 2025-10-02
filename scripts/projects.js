@@ -2,15 +2,11 @@ const projects = [];
 
 let toggled = false;
 let button;
-let largest = 0;
 
 function getCards() {
     // Get all elements
     for (let i = 0; i < 9; i++) {
         projects[i] = document.getElementById('s' + i);
-        if (largest < projects[i].offsetHeight) {
-            largest = projects[i].offsetHeight;
-        }
     }
 
     // Only the first 3 should be visible by default

@@ -30,10 +30,19 @@
       box-shadow:var(--shadow-md);
       border-color:var(--accent);
     }
+
+    .project-radio {
+      margin-left: 5px;
+      float: left;
+      position: relative;
+      left: 48%;
+      bottom: -7px;
+    }
   </style>
   <!-- JS -->
   <script src="scripts/theme.js"></script>
   <script src="scripts/projects.js"></script>
+  <script src="scripts/radio.js"></script>
 </head>
 <body>
   <!-- =====================================================
@@ -267,7 +276,7 @@
       <div class="projects-grid">
         
         <!-- PROJECT 1 -->
-        <div class="project-card">
+        <div class="project-card" id="p0">
           <h4>
             <!-- EDIT: Project title -->
             <a href="https://github.com/skyler948/MAGE" class="link-btn secondary-small" target="_blank">MAGE (Maybe a Game Engine)</a>
@@ -279,7 +288,7 @@
         </div>
         
         <!-- PROJECT 2 -->
-        <div class="project-card">
+        <div class="project-card" id="p1">
           <h4>
             <!-- EDIT: Project title -->
             <a href="https://github.com/skyler948/gd-cps-calc" class="link-btn secondary-small" target="_blank">Geometry Dash CPS Calculator</a>
@@ -290,7 +299,37 @@
           </p>
         </div>
 
+        <!-- PROJECT 3 -->
+        <div class="project-card" id="p2">
+          <h4>
+            <!-- EDIT: Project title -->
+            <a href="#" class="link-btn secondary-small" target="_blank">Placeholder 1</a>
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        
+        <!-- PROJECT 4 -->
+        <div class="project-card" id="p3">
+          <h4>
+            <!-- EDIT: Project title -->
+            <a href="#" class="link-btn secondary-small" target="_blank">Placeholder 2</a>
+          </h4>
+          <p>
+            <!-- EDIT: Describe what you did (2-3 sentences) -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
       </div>
+      <!-- RADIO BUTTONS - 2 PROJECTS/PG -->
+      <input class="project-radio" type="radio" name="optradio" id="radio-0" checked>
+      <input class="project-radio" type="radio" name="optradio" id="radio-1">
+      <script>getRadios()</script>
+      <script>getRadioCards()</script>
+      <script>updatePage()</script>
     </div>
 
     <!-- CONTACT & LINKS SECTION -->
